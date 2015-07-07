@@ -14,3 +14,11 @@ describe('addToPool', function(){
     assert.strictEqual(objPool[0].name,"test1");
   })
 });
+
+describe('addToPool', function(){
+  it('Object should have an ID after we add it.', function(){
+    var objPool = [];
+    pool.addToPool(objPool,"test1",null);
+    assert.strictEqual(objPool[0].id,1);
+  })
+});
